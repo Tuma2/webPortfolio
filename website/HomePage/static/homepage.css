@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+.container{
+    background-color: red;
+    height: 100vh;
+    position: absolute;
+}
+.top{
+    padding: 25px;
+    height: auto;
+    width: 50%;
+    float: left;
+}
+
+.middle{
+    border: 2px solid;
+    height: 600px;
+    padding: 10px;
+     background-color: black;
+     position: absolute;
+     top: 200px;
+     width: 25%;
+     left: 5%;
+     z-index:2;
+}
+
+.middle2{
+    border: 2px solid;
+    height: 600px;
+    left: 30%;
+    top:200px;
+    background-color: red;
+    width: 70%;
+    position: fixed;
+    z-index:1;
+}
+
+.bottom{
+    border: 2px solid;
+    height: 200%;
+    padding: 10px;
+     background-color: green;
+}
+
+.text{
+    color: White;
+    font-size: 80px
+}
+
+
+.text:hover{
+    transform: translateX(10px);
+   transition-property:transform;
+    transition-duration:0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0.7;
+    font-size: 100px
+}
+
+.text1{
+    color: White;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.text1:hover{
+    transition-property:transform;
+    transition-duration:0.3s;
+    transition-timing-function: ease;
+     transform: translateX(20px);
+     transform: translateY(-10px);
+    transition-delay: 0.7;
+    font-size:80px;
+}
+
+
+.flxMain{
+    background-color: black;
+}
+
+.hamburger{
+
+}
