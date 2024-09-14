@@ -14,33 +14,31 @@
 }
 
 .middle{
-    border: 2px solid;
-    height: 600px;
+    height: 550px;
     padding: 10px;
-     background-color: black;
      position: absolute;
      top: 200px;
      width: 25%;
      left: 5%;
      z-index:2;
+
 }
 
 .middle2{
-    border: 2px solid;
-    height: 600px;
+    height: 550px;
     left: 30%;
     top:200px;
-    background-color: red;
     width: 70%;
     position: fixed;
     z-index:1;
 }
 
 .bottom{
-    border: 2px solid;
     height: 200%;
     padding: 10px;
-     background-color: green;
+     position: fixed;
+    top:80%;
+    width:50%
 }
 
 .text{
@@ -70,15 +68,145 @@
     transition-timing-function: ease;
      transform: translateX(20px);
      transform: translateY(-10px);
-    transition-delay: 0.7;
+    transition-delay: 1;
     font-size:80px;
 }
 
+.text2{
+    color: White;
+    font-size: 30px;
+    left:4%;
+    top:4%;
+    position:relative;
+}
+
+.text3{
+    color: White;
+    font-size: 60px;
+    left:2.5%;
+    position:fixed;
+}
 
 .flxMain{
     background-color: black;
+
 }
 
 .hamburger{
 
 }
+
+.circle{
+    position: absolute;
+    top:25%;
+    left:35%;
+    width:45vh;
+    height:45vh;
+    border-radius:50%;
+    background: linear-gradient(white,gray);
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.circle:after{
+    content:'';
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    bottom: 35px;
+    right: 35px;
+    border-radius:50%;
+    background-color: black;
+
+}
+
+.circle span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white,gray);
+    border-radius: 50%;
+}
+
+.circle span:nth-child(1){
+    filter: blur(15px);
+}
+
+.circle span:nth-child(2){
+    filter: blur(30px);
+}
+
+.circle span:nth-child(3){
+    filter: blur(60px);
+}
+
+.circle span:nth-child(4){
+    filter: blur(125px);
+}
+
+.circle2{
+    position: absolute;
+    top:45%;
+    left:52%;
+    width:400px;
+    height:400px;
+    background: black;
+    border-width: 10px;
+    border-radius:50%;
+    animation: animate2 10s linear infinite;
+}
+
+.circle2:after{
+    content:'';
+    position: absolute;
+    top: 65px;
+    right: 65px;
+    bottom: 65px;
+    left: 65px;
+}
+
+.circle2 span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black,black);
+    border: solid black;
+    border-radius: 50%;
+}
+
+.circle2 span:nth-child(1){
+    filter: blur(55px);
+}
+
+.circle2 span:nth-child(2){
+    filter: blur(90px);
+}
+
+.circle2 span:nth-child(3){
+    filter: blur(160px);
+}
+
+.circle2 span:nth-child(4){
+    filter: blur(255px);
+}
+
+@keyframes animate2{
+    from{
+        transform: rotate(360deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+
