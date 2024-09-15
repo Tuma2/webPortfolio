@@ -1,0 +1,9 @@
+asgiref==3.8.1
+beautifulsoup4==4.12.3
+Django==4.2.16
+environ==1.0
+google==3.0.0
+python-dotenv==1.0.1
+soupsieve==2.5
+sqlparse==0.5.1
+typing_extensions==4.12.2
